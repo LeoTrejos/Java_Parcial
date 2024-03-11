@@ -15,6 +15,8 @@ public class Dos{
         String[] opciones = {"Piedra", "Papel", "Tijeras"};
 
         System.out.println("¡Bienvenido al juego de Piedra, Papel o Tijeras!");
+        System.out.println("Por favor ingrese el nombre: ");
+        String Nombre = scanner.nextLine();
         System.out.print("Elige una opción (Piedra, Papel, Tijeras): ");
         String eleccionUsuario = scanner.nextLine();
 

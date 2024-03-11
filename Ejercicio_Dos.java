@@ -7,7 +7,7 @@ quién gana según las reglas del juego.*/
 
 import java.util.Scanner;
 import java.util.Random;
-public class Dos{
+public class Ejercicio_Dos{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -15,17 +15,20 @@ public class Dos{
         String[] opciones = {"Piedra", "Papel", "Tijeras"};
 
         System.out.println("¡Bienvenido al juego de Piedra, Papel o Tijeras!");
+
         System.out.println("Por favor ingrese el nombre: ");
         String Nombre = scanner.nextLine();
+        System.out.println("¡Bienvenido " + Nombre + "!");
+
         System.out.print("Elige una opción (Piedra, Papel, Tijeras): ");
         String eleccionUsuario = scanner.nextLine();
 
         int indiceComputador = random.nextInt(3);
-        String eleccionComputadora = opciones[indiceComputador];
+        String eleccionComputador = opciones[indiceComputador];
 
         System.out.println("El computador elige: " + eleccionComputador);
 
-        if (eleccionUsuario.equals(eleccionComputadora)) {
+        if (eleccionUsuario.equals(eleccionComputador)) {
             System.out.println("¡Es un empate!");
         } else if ((eleccionUsuario.equals("Piedra") && eleccionComputador.equals("Tijeras")) ||
                    (eleccionUsuario.equals("Papel") && eleccionComputador.equals("Piedra")) ||
@@ -34,5 +37,7 @@ public class Dos{
         } else {
             System.out.println("¡El computador gana! ¡Inténtalo de nuevo!");
         }
+        scanner.close();
     }
+    
 }

@@ -11,22 +11,22 @@ public class Ejercicio_Cuatro {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Por favor, ingresa un nombre:");
-        String Nombre = scanner.nextLine();
+        String Nombre = input.nextLine();
 
-        System.out.print("Ingrese la cantidad inicial invertida: ");
+        System.out.print(Nombre + ", ingrese la cantidad inicial invertida: ");
         double principal = input.nextDouble();
 
-        System.out.print("Ingrese la tasa de interés anual (en porcentaje): ");
-        double tasaInteresAnual = input.nextDouble() / 100;
+        System.out.print(Nombre + ", ingrese la tasa de interés anual (en porcentaje): ");
+        double Tasa_Interes_Anual = input.nextDouble() / 100;
 
-        System.out.print("Ingrese el número de años: ");
-        int numAnios = input.nextInt();
+        System.out.print(Nombre + ", ingrese el número de años: ");
+        int Numero_Anios = input.nextInt();
 
-        double montoFinal = principal * Math.pow(1 + tasaInteresAnual, numAnios);
+        double Monto_Final = principal * Math.pow(1 + Tasa_Interes_Anual, Numero_Anios);
 
-        System.out.println("El monto final después de " + numAnios + " años es: " + montoFinal);
+        System.out.println("El monto final después de " + Numero_Anios + " años es: " + Monto_Final);
 
-        
+        input.close();
     }
 }
 

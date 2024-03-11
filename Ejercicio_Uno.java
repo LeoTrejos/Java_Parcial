@@ -12,7 +12,7 @@ public class Ejercicio_Uno {
 
         System.out.println("Por favor, ingresa un nombre:");
         String Nombre = scanner.nextLine();
-        
+
         System.out.print(Nombre + ", Por favor ingresa un año: ");
         int Año = scanner.nextInt();
 
@@ -21,5 +21,6 @@ public class Ejercicio_Uno {
         } else {
             System.out.println(Nombre + ", el año es: " + Año + " no es un año bisiesto.");
         }
+        scanner.close();
     }
 }

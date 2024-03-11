@@ -11,14 +11,14 @@ Si el usuario ingresa 4:
 
 import java.util.Scanner;
 
-public class Ejercicio_Seis {
+public class Exercise_Six {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Por favor, ingresa un número entero positivo: ");
-        int Numero = input.nextInt();
+        System.out.print("Please enter a positive integer: ");
+        int Number = input.nextInt();
 
-        for (int i = 0; i < Numero; i++) {
+        for (int i = 0; i < Number; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }

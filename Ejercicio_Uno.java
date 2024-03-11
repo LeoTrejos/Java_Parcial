@@ -7,9 +7,12 @@ y 2100 no lo son.  */
 
 public class Ejercicio_Uno {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Por favor, ingresa un nombre:");
         String Nombre = scanner.nextLine();
+        
         System.out.print(Nombre + ", Por favor ingresa un año: ");
         int Año = scanner.nextInt();
 

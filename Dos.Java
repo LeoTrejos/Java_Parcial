@@ -7,7 +7,7 @@ usuario que elija una de las opciones (Piedra, Papel o Tijeras) y luego generar
 aleatoriamente la elección de la computadora. Luego, el programa debe determinar
 quién gana según las reglas del juego.*/
 
-public class Dos {
+public class Dos{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();

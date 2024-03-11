@@ -6,23 +6,24 @@ euros). Luego, debe realizar la conversión y mostrar el resultado. */
 
 import java.util.Scanner;
 
-public class Ejercicio_Tres {
+public class Exercise_Three {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Por favor ingresa el nombre: ");
-        String Nombre = scanner.nextLine();
+        System.out.println("Please enter the name: ");
+        String Name = scanner.nextLine();
 
-        System.out.print(Nombre + ", Ingresa la cantidad de dinero a convertir: ");
-        double cantidad = scanner.nextDouble();
+        System.out.print(Name + ", Please enter the amount of money to convert: ");
+        double amount = scanner.nextDouble();
 
-        System.out.print(Nombre + ", Ingresa la tasa de cambio: ");
-        double tasaCambio = scanner.nextDouble();
+        System.out.print(Name + ", Enter the exchange rate: ");
+        double exchangeRate = scanner.nextDouble();
 
-        double resultado = cantidad * tasaCambio;
+        double result = amount * exchangeRate;
 
-        System.out.println(Nombre + ", La cantidad equivalente es: " + resultado);
+        System.out.println(Name + ", The equivalent amount is: " + result);
 
         scanner.close();
     }
 }
+

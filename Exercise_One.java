@@ -5,22 +5,23 @@ bisiesto o no. Un año bisiesto es aquel divisible por 4, excepto aquellos divis
 pero no por 400. Por ejemplo, 2000 y 2400 son años bisiestos, mientras que 1800, 1900
 y 2100 no lo son.  */
 
-public class Ejercicio_Uno {
+public class Exercise_One {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Por favor, ingresa un nombre:");
-        String Nombre = scanner.nextLine();
+        System.out.println("Please enter a name:");
+        String Name = scanner.nextLine();
 
-        System.out.print(Nombre + ", Por favor ingresa un año: ");
-        int Año = scanner.nextInt();
+        System.out.print(Name + ", Please enter a year: ");
+        int Year = scanner.nextInt();
 
-        if ((Año % 4 == 0 && Año % 100 != 0) || Año % 400 == 0) {
-            System.out.println(Nombre + ", el año es: " + Año + " es un año bisiesto.");
+        if ((Year % 4 == 0 && Year % 100 != 0) || Year % 400 == 0) {
+            System.out.println(Name + ", the year is: " + Year + " is a leap year.");
         } else {
-            System.out.println(Nombre + ", el año es: " + Año + " no es un año bisiesto.");
+            System.out.println(Name + ", the year is: " + Year + " is not a leap year.");
         }
         scanner.close();
     }
 }
+
